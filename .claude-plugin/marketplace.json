@@ -1,0 +1,19 @@
+{
+  "name": "hogeyama-skills",
+  "owner": {
+    "name": "hogeyama"
+  },
+  "metadata": {
+    "description": "個人用 Agent Skills コレクション",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "my-skills",
+      "description": "個人用スキル集",
+      "source": "./",
+      "strict": true,
+      "skills": ["./skills/git-rewrite"]
+    }
+  ]
+}
