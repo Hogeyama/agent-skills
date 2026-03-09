@@ -4,6 +4,5 @@
   "description": "個人用 Agent Skills コレクション",
   "author": {
     "name": "hogeyama"
-  },
-  "skills": "./skills/"
+  }
 }
