@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "個人用 Agent Skills コレクション",
-    "version": "0.1.0"
+    "version": "0.2.0"
   },
   "plugins": [
     {
@@ -13,7 +13,7 @@
       "description": "個人用スキル集",
       "source": "./",
       "strict": true,
-      "skills": ["./skills/git-rewrite"]
+      "skills": ["./skills/git-rewrite", "./skills/git-commit"]
     }
   ]
 }
