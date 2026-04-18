@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "個人用 Agent Skills コレクション",
-    "version": "0.2.0"
+    "version": "0.3.0"
   },
   "plugins": [
     {
@@ -13,7 +13,11 @@
       "description": "個人用スキル集",
       "source": "./",
       "strict": true,
-      "skills": ["./skills/git-rewrite", "./skills/git-commit"]
+      "skills": [
+        "./skills/git-rewrite",
+        "./skills/git-commit",
+        "./skills/distill-to-adr"
+      ]
     }
   ]
 }
