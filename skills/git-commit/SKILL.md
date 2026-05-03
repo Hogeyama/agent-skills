@@ -29,14 +29,12 @@ Create git commits with messages that capture not just *what* changed, but *why*
 <type>(<scope>): <concise summary>
 
 <Body: free-form paragraphs covering the points below as relevant>
-
-Co-Authored-By: Claude Opus 4.6 <noreply@anthropic.com>
 ```
 
 ### Title
 
 Follow Conventional Commits: `feat`, `fix`, `refactor`, `test`, `docs`, `chore`, `perf`, `ci`, `build`, `style`.
-Keep under 72 characters. Use imperative mood.
+Keep under 72 characters. Use an imperative mood.
 
 ### Body
 
@@ -49,29 +47,8 @@ Write in free-form prose or bullet points — no rigid template. Cover these poi
 
 Do not pad the body with filler. If the change is trivial (typo fix, version bump), a title-only message is fine.
 
-### Examples
-
-Trivial change — title only:
-```
-fix: correct typo in error message
-```
-
-Non-trivial change — with rationale:
-```
-feat(auth): add JWT refresh token rotation
-
-Rotate refresh tokens on each use to limit the window of a leaked token.
-Considered using short-lived access tokens only (no refresh), but that
-would force re-login every 15 minutes which is unacceptable for the
-mobile app's UX. Redis-based token blacklisting was also considered but
-adds an infrastructure dependency we want to avoid at this stage.
-```
-
 ## Rules
 
-- Never skip hooks (`--no-verify`) or bypass signing unless the user explicitly asks
-- Never amend unless the user explicitly asks — always create new commits
-- If a pre-commit hook fails, fix the issue and create a **new** commit
 - Do not commit files that likely contain secrets (`.env`, credentials, etc.)
-- Pass commit messages via HEREDOC for proper formatting
+- Pass commit messages via `-F <file>` for proper formatting
 - Do not push unless the user explicitly asks
