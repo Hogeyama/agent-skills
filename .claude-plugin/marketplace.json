@@ -16,7 +16,8 @@
       "skills": [
         "./skills/git-rewrite",
         "./skills/git-commit",
-        "./skills/distill-to-adr"
+        "./skills/distill-to-adr",
+        "./skills/gated-commit-loop"
       ]
     }
   ]
